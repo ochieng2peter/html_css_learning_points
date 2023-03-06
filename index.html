@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+ <html lang="en">
+     <head>
+      <meta charset="UTF-8">
+      <meta name="Author" content="O.Peter">
+      <meta name="description" content="This is an amateur website developed for learning basic html and css">
+      <meta name="Viewport" content="width-device-width,scale=1">
+      <link href="style.css"  type="text/css" rel="stylesheet">
+      <!--to put an icon on the title see below-->
+      <link rel="icon" href="icon.webp">
+      <!--In order to link a CSS stylesheet, use:<link rel="Stylesheet" href="nameof stylesheet.cc">-->
+     <!-- Below's Just a Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2EXH4SNKGM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2EXH4SNKGM');
+</script>
+<title>HTML & CSS</title>
+<!--The Style; is both a tag and an element/attribute. It is used to apply CSS Style-->
+<!--The basic syntax of CSS is ELEMENT NAME{Property to customize: Value of property to customize;}-->
+        
+     </head>
+     <!--CSS Selectors to Remember-->
+     <!--body>div>div - Immdiate child selector-->
+     <!--h3+span - Immediate child sibling selector - Styles the sibling span after h3-->
+     <!--h3~Span All siblings after h3 are selected here-->
+     <!--a[href] - all the lines with <a href> are selected and styled-->
+     <!--a[href^="https"] all the href with https followed by anythign else as the link are selected-->
+     <!--a[href$=".pdf"] all the href lines ending in .pdf are selected and styled together-->
+     <!--a[href="specific link"]  only the linke with that specific link is selected and styled-->
+     <!--* this applies the style in multiples of 0.5 to infinity-->
+     
+     <body>
+      <!--Here's how to input the menu. Also note that the menu formatting is done using CSS - eg to make it horizontal-->
+      <nav>
+  <ul class="menu">
+    <li><a href="file:///F:/Developer/HTML-CSS-JS%20Beginner/index.html">Findwork</a></li>
+    <li><a href="myjobs.html">MyJobs</a></li>
+    <li><a href="reports.html">Reports</a></li>
+    <li><a href="messages.html">Messages</a></li>
+  </ul>
+</nav>
+      <!--This is the first webpage and all comments are in green and are learnign points-->
+        <!--Here's the meaning of the below tags <i>=italics, <u>=Underline, <b>=bold, <br>= line break(enter or return) and <Strike>=strikethrough-->
+      <div id="header"><h1> Web Page Development(HTML and CSS)</div></h1>
+      <h2>Simple Sample Header to Style</h2>
+      <!--Display CSS Property-->
+      <p6>Display Property-inline and inline-block difference</p6>
+      <div id="myDiv" class="myDiv">Hi there, I'm just playing with css to see how specificity works</div>
+      <div>1. Some Text</div>
+      <div>2. Another Text</div>
+      <span>3.Some more text</span>
+        <!--CLASS is an element used to diffentiate two similar tags like in the <div> tag below:-->
+          <!--Make sure the class has the same case order to be grouped as 1-->
+            <!--you can also heve the different elements with the same class be styled separately by using the div.k1 and span.k1 or the rest just use .k1-->
+      <span class="k1">Jump to:</span>
+      <div class="k2">One</div>
+      <div>2</div>
+      <div class="k1">and 3</div>
+      <!--ADVANCED CSS SELECTORS: PROPERTIES - 23 Child and Imediate Child selector-->
+        <!--for the immediate Child selector use the > sign to apply the styling-->
+      <hr>
+        <div>    
+            <div>Line 1</div>
+            <p4>Line 2</p4>
+            <div>Line 3
+                <p5>line 3.1</p5>
+                <div>Line 3.2</div>
+            </div>
+        </div>
+        <hr> 
+        <Table>
+          <thead>
+            <tr>
+              <th>Browser Name</tth><!--Table Heading-->
+              <th>Users Online</th>
+              <th class="noborder">Browser Engine</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Google Chrome</td><!--Table Data-->
+              <td>500m</td>
+              <td>Blink</td>
+            </tr>
+            <tr class="alt">
+              <td>Mozilla Firefox</td>
+              <td>400m</td>
+              <td>Gecko</td>
+            </tr>
+            <tr>
+              <td>Edge</td>
+              <td>100m</td>
+              <td>Microsoft</td>
+            </tr>
+            <tr class="alt">
+              <td>Opera</td>
+              <td>50m</td>
+              <td>Webgate</td>
+            </tr>
+            <tr>
+              <td>Internet Explorer</td>
+              <td>100m</td>
+              <td>Blink</td>
+            </tr>
+          </tbody>
+        </Table>
+        <!--Advanced CSS selectors 24- Use the + sign to apply the style to the sibling next to an element-->
+          <!--If you want to style anything after the h3 you can use the ~ sign to apply the style in CSS so instead of h3+span you'll have h3~Span -->
+        <hr>
+        <span>Convo</span>
+        <h3>Hey Buddy</h3>
+        <span>I am okay dude</span>
+        <h3>Where are you these days</h3>
+        <span>I am in Kenya lol!</span>
+        <br>
+        <span>end of convo</span>
+        <hr>
+        <!--The below case: To Style anything with href you can use a[href] in html-->
+          <!--To select all the links with http and anything else that follows use the ^http like this a[href^="http"] in CSS-->
+          <a href="https://www.google.com/">Google</a>
+          <br>
+          <a href="https://www.youtube.com/watch?v=2O8pkybH6po&ab_channel=BroCode">Youtube Home</a>
+          <br>
+          <a href="https://web.facebook.com/?_rdc=1&_rdr">Facebook Home</a>
+        <hr>
+        <!--ID, is an attribute like CLASS but does the opposite - Restrict Styling to one elemenet-->
+          <!--IDs styling starts witn a # unlike the class attribute that starts with a period . -->
+        <div id="y1">This is a line to test how IDs styling works</div>
+        <span>This is the second line to test how IDs work</span><br>
+        <span>This is a third line to show how Ids work</span>
+         <p1><i>The best way to learn HTML is with guided practice.<br> 
+          It can be in a bootcamp, freecode camp or codeacademy(in-person or online) or with guided modules. <br>
+          A module provides a mix of video instruction, lectures, and guided practice.<br></i>
+          <u>Some even have a test that you take at the end of each lesson.</u><br><u><a href="https://www.youtube.com"target="_blank" >Youtube</a></u>
+            <!-- This is how to insert comments! --><br><br>
+              <!--the following line shows the image tag(img) and how to quickly resize the image in html-->
+            <img src="teahub.io-3d-nature-wallpapers-29539.jpg" alt="Portrait Image" title="Butterfly"Style="width:300px;height:300px;"><br>
+            <!--This following line shows how to input a mail to and Subject line in html-->
+
+            <a href="mailto:frank1peter4@gmail.com?Subject=Ask the Experts" target="_blank">Email Me</a><br>
+            <a href= "Projecteuler.py" target="code">projecteulercode</a><br>
+            I am looking to learn the following languages
+            <!--The elements for OL are TYPE and START-->
+              <!--OL stands for Ordered List and the type is an attribute to decide whether its (1,2,3)or(i,ii,iii)or(I,II,III)or(A.B,C) start attribute is which no to start at-->
+            <ol type="i"start="1">
+              <em>                                         
+              <li>Javascript</li>
+              <li>HTML and CSS - Markup Languages</li>
+              <li>React.JS and Node.Js - Libraries</li>
+              <li>Python-Django and Flask</li>
+              <li>Mongodb</li>
+              </em>
+            </ol> 
+            <!--The only element for UL is TYPE-->
+              <!--Below the type can be (disc(default)or circle or Square), Ul=Unordered list-->
+            <ul type="square">
+              <b><u>Groceries</u></b>
+              <li>Cabbages</li><li>Oranges</li> <li>Kales</li> <li>Carrots</li> <li>Peas</li> <li>Tomattoes</li>
+            </ul>
+            <!--Container tags =Have opening and closing tags and Empty Tags=Do not have closing tags( <br>, <hr>, <img>, <input>, <link>, and <meta>)-->
+              <!--Introduction to Forms - Input Boxes-->
+                <!--Form Value types: text, email, button, submit,Color, Date -->          
+          </p1>
+          <p2>
+            <samp>This is a samp tag that is basically a somewhat formatted text, rarely used since you can do all the formatting using CSS</samp>
+            <br>
+            <kbd>This is a kbd (keyboard text) tag that is basically a somewhat formatted text, just same as samp</kbd>
+            <br>
+            <strong>This is the 'Strong' tag that is similar to b tag</strong>
+            <h3>Forms and Input Types in Forms</h3>
+            <form action="index.html">
+              <div>
+                <label for="username">User Name:</label>
+                <input type="text" name="username" id="username" placeholder="Peter Ochieng">
+              </div>
+              <br>
+              <div>
+                <label for="Email">Email:</label> 
+                <input type="Email"id="Email" placeholder="frank1p@gmail.com">
+              </div>
+              <br>
+              <div>
+                <label for="Password">Password:</label>
+                <input type="password" id="password" placeholder="*******">
+              </div>
+              <br>
+              <div>
+                <label for="datetime-local">Local Date and Time:</label> 
+                <input type="datetime-local" id="datetime-local">
+              </div>
+              <br>
+              <div>
+                <label for="date">Date:</label>
+                <input type="date" id="date">
+              </div>
+              <br>
+              <div>
+                <label for="time">Time:</label>
+                <input type="time" id="time">
+              </div>
+              <br>
+              <div>
+                <label for="Telephone">Telephone No:</label>
+                <input type="tel" id="Telephone" placeholder="+254725798965">
+              </div>
+              <br>
+              <div>
+                <label for="Week">Week:</label>
+                <input type="week" id="Week">
+              </div>
+              <br>
+              <div>
+                <Label for="Month">Month:</Label>
+                <input type="month">
+              </div>
+              Chose the name of your Phone:<br>
+              <input type="checkbox" name="Phone">Samsung<br>
+              <input type="checkbox" name="Phone">iPhone<br>
+              <input type="checkbox" name="Phone">Nokia<br>
+              <input type="checkbox" name="Phone">Nexus<br>
+              <input type="checkbox" name="Phone">Oneplus<br>
+              <input type="checkbox" name="Phone">Other<br><br>
+              <div>
+                <input type="reset">
+              </div>
+              <br>
+              <b>Buttons are used to Make one of many selections like below:</b><br>
+              <input type="radio" name="Phone">Samsung<br>
+              <input type="radio" name="Phone">iPhone<br>
+              <input type="radio" name="Phone">Nokia<br>
+              <input type="radio" name="Phone">Nexus<br>
+              <input type="radio" name="Phone">Oneplus<br>
+              <input type="radio" name="other">Other<br>
+              <input type="color"><Input type="Search"><Input Type="File"><br><br>
+              URL:  <Input Type="url"><br><br>
+              <!--Well now the submit button below would appear just next to the number entry field-->
+              <input type="number"><input type="image" src="submitbutton.jpg"><br><br>
+              <i>Please select a value from the range below:</i><br>
+               1<input type="range" min="1" max="10" value="4">10<br><br>          
+              <!--note that you can always use CSS to modify the text area instead of using the Cols and rows-->
+              Message:<br><textarea cols="30" rows="5" maxlength="15"></textarea><br>
+              <input type="submit" value="Submit the Form">
+              </form>
+            </p2>
+            <p3>              
+              <pre>
+                Hoarse, booming drums of the regiment,
+                Little souls who thirst for fight,
+                These men were born to drill and die.
+                The unexplained glory flies above them,
+                Great is the battle-god, great, and his kingdom—
+                A field where a thousand corpses lie.
+              </pre>      
+            </p3>
+            <p4 Style="color:rgb(14, 240, 25);">
+              <blockquote cite="http://www.worldwildlife.org/who/index.html">
+                For 60 years, WWF has worked to help people and nature thrive. 
+                As the world's leading conservation organization, 
+                WWF works in nearly 100 countries. 
+                At every level, we collaborate with people around the 
+                world to develop and deliver innovative solutions that protect communities, 
+                wildlife, and the places in which they live.
+                </blockquote>
+            </p4>
+
+
+
+     </body>
+ </html>
